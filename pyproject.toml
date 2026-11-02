@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "particula-primordial"
+version = "0.2.0"
+description = "An auditable toolkit for MIDI normalization, transposable scale studies, computational composition and REAPER project analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Particula Primordial Research Project"}]
+dependencies = ["mido>=1.3.3,<2", "numpy>=1.26,<3", "pandas>=2.1,<4"]
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.40,<2", "plotly>=5.20,<7"]
+test = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+include = ["particula*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

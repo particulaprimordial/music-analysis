@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use Particula Primordial in research or teaching, please cite this repository."
+title: "Particula Primordial: An Auditable Toolkit for Computational Music Analysis and Scale-Transposable Composition"
+version: 0.2.0
+date-released: 2026-11-01
+type: software
+license: MIT
+abstract: >-
+  An open-source toolkit for MIDI note-event analysis and temporal normalization,
+  transposable scale catalogs, scale-derived harmony and algorithmic melody generation,
+  audio reference rendering, and conservative REAPER project inventory analysis.
